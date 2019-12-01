@@ -1,0 +1,23 @@
+n,k=input().split()
+N=int(n)
+h=int(k)
+K=N-h
+value=1
+sums=1
+sums2=1
+if N<=10 and h<=10:
+        while(N>0):
+            value=value*N
+            N=N-1
+        l=value
+        while(K>0):
+            sums=sums*K
+            K=K-1
+        m=sums
+        while(h>0):
+            sums2=sums2*h
+            h=h-1
+        n=sums2
+        a=n*m
+        c=int(l/a)
+        print(c)
