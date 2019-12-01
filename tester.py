@@ -5,4 +5,4 @@ try:
         d=n*m
         print(d)
 except ValueError:
-        print("invalid")
+        print("ValueError")
