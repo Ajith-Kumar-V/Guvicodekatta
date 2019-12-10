@@ -8,4 +8,4 @@ try:
   else:
     print("odd")
 except ValueError:
-        print("ValueError")
+        print("Input error")
