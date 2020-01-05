@@ -1,7 +1,7 @@
 n=int(input())
 l=[]
 for i in range(n):
-        h=[int(x) for x in input().split()][:2]
+        h=[int(x) for x in input().split()][:n]
         l.append(h)
 k=0
 o=0
