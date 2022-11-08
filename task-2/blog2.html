@@ -1,1 +1,46 @@
-
+<html>
+    <head>
+        <title>
+            Doc & Obj
+        </title>
+        <style>
+            body{
+                background-color: burlywood;
+            }
+            table,td,th{
+                border:1px solid;
+                border-collapse: collapse;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Difference between document and Window objects</h1>
+        <h3>Document Object :</h3>
+        <p>The document object represent a web page that is loaded in the browser. By accessing the document object, we can access the element in the HTML page. 
+            With the help of document objects, we can add dynamic content to our web page. 
+            The document object can be accessed with a window.document or just document.</p>
+        <h3>Window Object :</h3>
+        <p>The window object is the topmost object of the DOM hierarchy. It represents a browser window or frame that displays the contents of the webpage. 
+            Whenever a window appears on the screen to display the contents of the document, the window object is created. </p>
+        <br><br>
+        <table>
+            <tr><th>Document</th><th>Window</th></tr>
+            <tr><td>It represents any HTML document or web page that is loaded in the browser.</td>
+            <td>It represents a browser window or frame that displays the contents of the webpage.</td></tr>
+            <tr><td>It is loaded inside the window.</td>
+            <td>It is the very first object that is loaded in the browser.</td></tr>
+            <tr><td>It is the object of window property.</td>
+            <td>It is the object of the browser.</td></tr>
+            <tr><td>All the tags, elements with attributes in HTML are part of the document.</td>
+            <td>Global objects, functions, and variables of JavaScript are members of the window object.</td></tr>
+            <tr><td>We can access the document from a window using the window. document</td>
+            <td>We can access the window from the window only. i.e. window.window</td></tr>
+            <tr><td>The document is part of BOM (browser object model) and dom (Document object model)</td>
+            <td>The window is part of BOM, not DOM.</td></tr>
+            <tr><td>Properties of document objects such as title, body, cookies, etc can also be accessed by a window like this window. document.title</td>
+            <td>Properties of the window object cannot be accessed by the document object.</td></tr>
+            <tr><td><b>example:</b><br>document.title :  will return the title of the document</td>
+            <td><b>example:</b><br>window.innerHeight : will return the height of the content area of the browser</td></tr>
+        </table>
+    </body>
+</html>
