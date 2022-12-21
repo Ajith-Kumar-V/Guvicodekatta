@@ -1,0 +1,36 @@
+[
+    {
+        "name": "Ajith Kumar",
+        "role":"Security Analyst",
+        "mail":"vajithkumar20@gmail.com",
+        "Phone":8098573857,
+        "City":"Karur, Tamil Namdu"
+    },
+    {
+        "objective":"To construct my career as a respected team member of a professional organization by contributing to its progress and growth with my knowledge, andto expand my skills through the learning and training provided in my job function."
+    },
+    {
+        "std_1":"B.E-Mechatronics",
+        "inst_1":"Paavai Engineering College",
+        "perc_1":74.7,
+        "yop_1":2020
+    },
+    {
+        "std_2":"Higher Secondary Education",
+        "inst_2":"Star Matric.Hr.Secondary School",
+        "perc_2":80.42,
+        "yop_2":2016
+    },
+    {
+        "std_3":"Secondary School of Education",
+        "inst_3":"Star Matric.Hr.Secondary School",
+        "perc_3":87.42,
+        "yop_3":2014
+    }
+    ,{
+        "py":"Python",
+        "ja":"JAVA",
+        "js":"Javascript",
+        "web":"HTML & CSS"
+    }
+]
