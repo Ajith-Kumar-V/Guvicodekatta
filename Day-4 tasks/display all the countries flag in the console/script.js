@@ -10,7 +10,6 @@ function screener(data){
     var d=data;
     var adder="";
     for(let dd in d){
-    console.log(d[dd]);
     adder+=`
     <table style="width:100%">
         <tr>
