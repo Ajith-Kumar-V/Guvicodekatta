@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Events Home Page</title>
+    <meta name="viewport" content="width=device-width ,initial-scale=1.0" />
+    <style>
+      body {
+        background-color: none;
+      }
+      #searcher {
+        display: flex;
+        justify-content: center;
+        size: 3em;
+        margin: 0;
+      }
+      form {
+        color: #555;
+        display: flex;
+        padding: 2px;
+        border: 1px solid currentColor;
+        border-radius: 5px;
+        display: inline;
+      }
+      input[type="search"] {
+        border: 100%;
+        width: 84%;
+        background: transparent;
+        padding: 7px 6px;
+        font-size: 14px;
+        margin: 0%;
+        color: inherit;
+        border: 1px solid black;
+        border-radius: inherit;
+      }
+      input[type="search"]::placeholder {
+        color: #bbb;
+      }
+      button[type="submit"] {
+        text-indent: -999px;
+        overflow: hidden;
+        width: 15%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        border: 1px solid transparent;
+        border-radius: inherit;
+        background: transparent
+          url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E")
+          no-repeat center;
+        cursor: pointer;
+        opacity: 0.7;
+      }
+      button[type="submit"]:hover {
+        opacity: 1;
+        background-color: deepskyblue;
+      }
+      button[type="submit"]:focus,
+      input[type="search"]:focus {
+        box-shadow: 0 0 3px 0 #1183d6;
+        border: 2px navy solid;
+        border-color: #1183d6;
+        outline: none;
+      }
+      #event {
+        border: 2px solid;
+        width: 20%;
+        margin: 2% 1% 1% 1%;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+      #event:hover {
+        box-shadow: 2px 3px 10px;
+        background-color: lightgrey;
+      }
+      #event button {
+        font-style: italic;
+        font-family: "Times New Roman", serif;
+        border: 1.5px solid black;
+        border-radius: 5px;
+      }
+      #values {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+      }
+      h3 {
+        text-align: center;
+        margin: 2px;
+      }
+      p {
+        display: block;
+      }
+      img {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        border-radius: 50%;
+        border: 1px solid green;
+      }
+      #tester {
+        margin: 0%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+      #bigcontainer {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    </style>
+  </head>
+  <body style="width: 100%; height: 100%">
+    <script>
+      import data from "/data.json";
+      function searcher(strings) {
+        window.find(strings);
+      }
+      console.log(data);
+    </script>
+    <div id="searcher" style="width: 100%">
+      <form style="width: 80%">
+        <input
+          type="search"
+          placeholder="Search.."
+          name="search"
+          id="searchertxt"
+        />
+        <button
+          type="submit"
+          onclick="searcher(document.getElementById('searchertxt').value)"
+        >
+          Search
+        </button>
+      </form>
+    </div>
+    <div id="bigcontainer">
+      <div id="event" style="width: 30%; height: 30%">
+        <h3>Event 1</h3>
+        <hr />
+        <div id="tester">
+          <img
+            src="https://media.istockphoto.com/id/1154370446/photo/funny-raccoon-in-green-sunglasses-showing-a-rock-gesture-isolated-on-white-background.jpg?b=1&s=170667a&w=0&k=20&c=0TMr8WpcPHzDQuWUOIRTnyxVPWtj-bRKUFUEUrhx8Vc="
+            alt="profile"
+          />
+          <div id="values">
+            <p>23-May-2020</p>
+            <p>Seats<br />Available: 23</p>
+            <button>Book Now</button>
+          </div>
+        </div>
+      </div>
+      <div id="event" style="width: 30%; height: 30%">
+        <h3>Event 2</h3>
+        <hr />
+        <div id="tester">
+          <img
+            src="https://media.istockphoto.com/id/1154370446/photo/funny-raccoon-in-green-sunglasses-showing-a-rock-gesture-isolated-on-white-background.jpg?b=1&s=170667a&w=0&k=20&c=0TMr8WpcPHzDQuWUOIRTnyxVPWtj-bRKUFUEUrhx8Vc="
+            alt="profile"
+          />
+          <div id="values">
+            <p>23-May-2020</p>
+            <p>Seats<br />Available: 23</p>
+            <button>Book Now</button>
+          </div>
+        </div>
+      </div>
+      <div id="event" style="width: 30%; height: 30%">
+        <h3>Event 3</h3>
+        <hr />
+        <div id="tester">
+          <img
+            src="https://media.istockphoto.com/id/1154370446/photo/funny-raccoon-in-green-sunglasses-showing-a-rock-gesture-isolated-on-white-background.jpg?b=1&s=170667a&w=0&k=20&c=0TMr8WpcPHzDQuWUOIRTnyxVPWtj-bRKUFUEUrhx8Vc="
+            alt="profile"
+          />
+          <div id="values">
+            <p>23-May-2020</p>
+            <p>Seats<br />Available: 23</p>
+            <button>Book Now</button>
+          </div>
+        </div>
+      </div>
+      <div id="event" style="width: 30%; height: 30%">
+        <h3>Event 4</h3>
+        <hr />
+        <div id="tester">
+          <img
+            src="https://media.istockphoto.com/id/1154370446/photo/funny-raccoon-in-green-sunglasses-showing-a-rock-gesture-isolated-on-white-background.jpg?b=1&s=170667a&w=0&k=20&c=0TMr8WpcPHzDQuWUOIRTnyxVPWtj-bRKUFUEUrhx8Vc="
+            alt="profile"
+          />
+          <div id="values">
+            <p>23-May-2020</p>
+            <p>Seats<br />Available: 23</p>
+            <button>Book Now</button>
+          </div>
+        </div>
+      </div>
+      <div id="event" style="width: 30%; height: 30%">
+        <h3>Event 5</h3>
+        <hr />
+        <div id="tester">
+          <img
+            src="https://media.istockphoto.com/id/1154370446/photo/funny-raccoon-in-green-sunglasses-showing-a-rock-gesture-isolated-on-white-background.jpg?b=1&s=170667a&w=0&k=20&c=0TMr8WpcPHzDQuWUOIRTnyxVPWtj-bRKUFUEUrhx8Vc="
+            alt="profile"
+          />
+          <div id="values">
+            <p>23-May-2020</p>
+            <p>Seats<br />Available: 23</p>
+            <button>Book Now</button>
+          </div>
+        </div>
+      </div>
+      <div id="event" style="width: 30%; height: 30%">
+        <h3>Event 6</h3>
+        <hr />
+        <div id="tester">
+          <img
+            src="https://media.istockphoto.com/id/1154370446/photo/funny-raccoon-in-green-sunglasses-showing-a-rock-gesture-isolated-on-white-background.jpg?b=1&s=170667a&w=0&k=20&c=0TMr8WpcPHzDQuWUOIRTnyxVPWtj-bRKUFUEUrhx8Vc="
+            alt="profile"
+          />
+          <div id="values">
+            <p>23-May-2020</p>
+            <p>Seats<br />Available: 23</p>
+            <button>Book Now</button>
+          </div>
+        </div>
+      </div>
+      <div id="event" style="width: 30%; height: 30%">
+        <h3>Event 7</h3>
+        <hr />
+        <div id="tester">
+          <img
+            src="https://media.istockphoto.com/id/1154370446/photo/funny-raccoon-in-green-sunglasses-showing-a-rock-gesture-isolated-on-white-background.jpg?b=1&s=170667a&w=0&k=20&c=0TMr8WpcPHzDQuWUOIRTnyxVPWtj-bRKUFUEUrhx8Vc="
+            alt="profile"
+          />
+          <div id="values">
+            <p>23-May-2020</p>
+            <p>Seats<br />Available: 23</p>
+            <button>Book Now</button>
+          </div>
+        </div>
+      </div>
+      <div id="event" style="width: 30%; height: 30%">
+        <h3>Event 8</h3>
+        <hr />
+        <div id="tester">
+          <img
+            src="https://media.istockphoto.com/id/1154370446/photo/funny-raccoon-in-green-sunglasses-showing-a-rock-gesture-isolated-on-white-background.jpg?b=1&s=170667a&w=0&k=20&c=0TMr8WpcPHzDQuWUOIRTnyxVPWtj-bRKUFUEUrhx8Vc="
+            alt="profile"
+          />
+          <div id="values">
+            <p>23-May-2020</p>
+            <p>Seats<br />Available: 23</p>
+            <button>Book Now</button>
+          </div>
+        </div>
+      </div>
+      <div id="event" style="width: 30%; height: 30%">
+        <h3>Event 9</h3>
+        <hr />
+        <div id="tester">
+          <img
+            src="https://media.istockphoto.com/id/1154370446/photo/funny-raccoon-in-green-sunglasses-showing-a-rock-gesture-isolated-on-white-background.jpg?b=1&s=170667a&w=0&k=20&c=0TMr8WpcPHzDQuWUOIRTnyxVPWtj-bRKUFUEUrhx8Vc="
+            alt="profile"
+          />
+          <div id="values">
+            <p>23-May-2020</p>
+            <p>Seats<br />Available: 23</p>
+            <button>Book Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
